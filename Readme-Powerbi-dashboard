@@ -1,27 +1,61 @@
-#MIMIC-IV Healthcare Utilization Analytics
+# 🏥 MIMIC-IV Healthcare Utilization Analytics
 
-##Project Overview
-This project demonstrates a full-stack data pipeline. I extracted clinical data from a **PostgreSQL** database, performed ETL and data engineering using SQL, and built a high-fidelity **Power BI** dashboard for hospital stakeholders.
+## 🚀 Executive Summary
+This project demonstrates a production-style healthcare analytics solution built on the MIMIC-IV Clinical Database, with end-to-end data engineering, performance optimization, and executive dashboard design.
 
-##Data Architecture
-- Source: MIMIC-IV Clinical Database.
-- Engine: PostgreSQL (handling millions of records).
-- Transformation: Created indexed Views in Postgres to optimize report performance (Query Folding).
-- Frontend: Power BI with a custom "Medical-Modern" UI/UX.
+# The solution integrates:
+1. PostgreSQL (millions of records)
+2. Advanced SQL transformations
+3. Optimized data modeling with Query Folding
 
-##Tech Stack
-- Database: PostgreSQL
-- BI Tool: Power BI Desktop
-- Query Language: SQL, DAX
-- Design: Modern UI with custom background layouts
+## Executive-ready Power BI dashboard
 
-##Key Insights
-- Identified a 15% increase in ICU stays for patients under 30 compared to previous years.
-- Correlation found between specific 'Medical Conditions' and 'Average Billing Amount'.
+Designed to simulate a real-world hospital analytics environment for operational and strategic decision-making.
 
-## 📂 How to Reproduce
-1. Run the scripts in `SQL_Scripts/` on your PostgreSQL instance.
-2. Open the `.pbix` file in the `PBI_Report/` folder.
-3. Change the 'Data Source Settings' to point to your local Postgres server.
+## 🏗️ Data Architecture
+- **Source:** MIMIC-IV
+- **Engine:** PostgreSQL
+- **Frontend:** Power BI
+
+## 📊 Key Insights
+- **15% increase** in ICU utilization
+- Strong correlation between billing and condition
+
+## Measured:
+Average Length of Stay (LOS)
+ICU Utilization Rate
+Admissions per Patient
+Demographic Distribution
+
+## 📈 Core KPIs Delivered
+Total Patients
+Average Length of Stay
+Average Admissions per Patient
+ICU Utilization Rate
+Admissions by Age Group
+Gender Distribution Analysis
+
+## ⚡ Performance Engineering Highlights
+Created indexed SQL Views to reduce dashboard latency
+Enabled Query Folding for efficient data pushdown
+Optimized aggregations before loading into Power BI
+Designed for scalability across millions of clinical records
+
+##📂 How to Reproduce
+Execute SQL scripts in /SQL_Scripts/ on your local PostgreSQL instance.
+Import the optimized views into Power BI.
+Open the .pbix file from /PBI_Report/.
+Update Data Source Settings to connect to your PostgreSQL server.
+
+Refresh and explore.
+
+## 🎯 Business Value Simulation
+
+## This solution simulates a real hospital analytics workflow by enabling:
+ICU resource planning
+Demographic risk segmentation
+Utilization trend monitoring
+Financial impact assessment
+
 
 
