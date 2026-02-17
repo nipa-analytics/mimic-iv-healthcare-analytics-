@@ -19,10 +19,9 @@ This project demonstrates a full-stack data pipeline. I extracted clinical data 
 - Identified a 15% increase in ICU stays for patients under 30 compared to previous years.
 - Correlation found between specific 'Medical Conditions' and 'Average Billing Amount'.
 
-
-
-
 ## 📂 How to Reproduce
 1. Run the scripts in `SQL_Scripts/` on your PostgreSQL instance.
 2. Open the `.pbix` file in the `PBI_Report/` folder.
 3. Change the 'Data Source Settings' to point to your local Postgres server.
+
+
